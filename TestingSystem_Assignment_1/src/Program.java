@@ -39,23 +39,24 @@ public class Program {
         account1.position = position1;
         account1.createDate = LocalDate.now();
 
+        Account account2 = new Account();
+        account2.accountId = 2;
+        account2.email = "nguyenvanb@gmail.com";
+        account2.userName = "B";
+        account2.fullName = "Nguyen Van B";
+        account2.department = department1;
+        account2.position = position1;
+        account2.createDate = LocalDate.now();
+
         Account account3 = new Account();
         account3.accountId = 3;
         account3.email = "nguyenvanc@gmail.com";
-        account3.userName = "A";
+        account3.userName = "C";
         account3.fullName = "Nguyen Van C";
         account3.department = department1;
         account3.position = position1;
         account3.createDate = LocalDate.now();
 
-        Account account2 = new Account();
-        account2.accountId = 2;
-        account2.email = "nguyenvanb@gmail.com";
-        account2.userName = "A";
-        account2.fullName = "Nguyen Van B";
-        account2.department = department1;
-        account2.position = position1;
-        account2.createDate = LocalDate.now();
 
 
         Group group1 = new Group();
@@ -194,6 +195,11 @@ public class Program {
         Question[] questions3 = {question2, question3};
         exam3.questions = questions3;
 
-        System.out.println("Acc1 Id: " + account1.accountId + " UserName: " + account1.fullName + " Email: " + account1.email + " DepartName: " + account1.department.departmentName + " Position: " + account1.position.positionName);
+        System.out.println( "Account1 Id: " + account1.accountId +
+                            " FullName: " + account1.fullName +
+                            " Email: " + account1.email +
+                            " DepartName: " + account1.department.departmentName +
+                            " Position: " + account1.position.positionName +
+                            " CreateDate: " + account1.createDate);
     }
 }
